@@ -1,0 +1,9 @@
+<phpunit colors="true">
+  <testsuites>
+    <testsuite name="Persister">
+      <file>PersisterMySQLTest.php</file>
+      <file>ApiLogTest.php</file>
+      <file>PersisterMongoTest.php</file>
+    </testsuite>
+  </testsuites>
+</phpunit>

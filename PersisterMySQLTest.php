@@ -1,6 +1,6 @@
 <?php
-require "PersisterMySQL.php";
-require "ApiLog.php";
+require_once "PersisterMySQL.php";
+require_once "ApiLog.php";
 class PersisterMySQLTest extends PHPUnit_Framework_TestCase {
   function testPersisterMySQLShouldReturnTrue() {
     $persisterMySQL = new PersisterMySQL();
