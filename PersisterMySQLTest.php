@@ -1,6 +1,7 @@
 <?php
 require_once "PersisterMySQL.php";
 require_once "ApiLog.php";
+require_once "PDOConnect.php";
 class PersisterMySQLTest extends PHPUnit_Framework_TestCase {
   function testPersisterMySQLShouldReturnTrue() {
     $persisterMySQL = new PersisterMySQL();
@@ -10,11 +11,11 @@ class PersisterMySQLTest extends PHPUnit_Framework_TestCase {
     $persisterMySQL = new PersisterMySQL();
     $this->assertNotNull($persisterMySQL);
   }
-  function testConnectMySql(){
-   $pdo=$this->getMock('PDOConnect');
-   $pdo->expects($this->any())
-     ->method('connectMySql')
-     ->will($this->returnValue(true));
-
+  function testInsertPdo(){
+    $pdo=new PDOConnect();
+    $result= $pdo->insert();
+  // $this->mockPdoWrite=$this->GetMockBuilder('PDO')->disableOriginalConstructor()->getMock();
+//   $this->mockPdoWrite->expects($this->once())->method('extcute');//->will($this->returnValue(true)));
+   $this->assertEquals(true,$result);
   }
 }
