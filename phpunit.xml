@@ -1,12 +1,7 @@
 <phpunit colors="true">
   <testsuites>
     <testsuite name="Persister">
-      <file>PersisterMySQLTest.php</file>
-      <file>ApiLogTest.php</file>
-      <file>PersisterMongoTest.php</file>
-      <file>MongoDBTest.php</file>
-      <file>RedisTest.php</file>
-      <file>PersisterRedisTest.php</file>
+      <directory>tests</directory>
     </testsuite>
   </testsuites>
 </phpunit>

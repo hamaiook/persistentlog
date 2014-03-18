@@ -1,5 +1,4 @@
 <?php
-require_once 'Persister.php';
 Class PersisterRedis implements Persister{
   function __construct(Redis $redis){
     $this->redis = $redis;

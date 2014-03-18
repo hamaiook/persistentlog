@@ -1,5 +1,8 @@
 {
   "require":{
     "phpunit/phpunit": "4.0.*@dev"
+  },
+  "autoload": {
+    "classmap": ["libraries/adaptors", "libraries/adaptors/implements", "tests"]
   }
 }

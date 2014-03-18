@@ -1,5 +1,4 @@
 <?php
-require "Persister.php";
 class PersisterMySQL implements Persister {
   private $pdo;
   function __construct(PDO $pdo) {

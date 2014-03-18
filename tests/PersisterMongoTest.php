@@ -1,7 +1,4 @@
 <?php
-require_once "PersisterMongo.php";
-require_once "ApiLog.php";
-require_once "MongoDB.php";
 class PersisterMongoTest extends PHPUnit_Framework_TestCase{
   public function testPersistentLogMongoInsert(){
     $di = new Stdclass;

@@ -1,5 +1,4 @@
 <?php
-require_once "Persister.php";
 class PersisterMongo implements Persister {
   var $di = null;
   function __construct($di){

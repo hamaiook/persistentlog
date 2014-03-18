@@ -1,7 +1,4 @@
 <?php
-require_once "PersisterMySQL.php";
-require_once "ApiLog.php";
-require_once "MockPDO.php";
 class PersisterMySQLTest extends PHPUnit_Framework_TestCase {
   function testPersisterMySQLShouldReturnTrue() {
     $mockPDOStatement = $this->getMock('PDOStatement');

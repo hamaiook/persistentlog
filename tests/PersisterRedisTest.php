@@ -1,7 +1,4 @@
 <?php
-require_once 'PersisterRedis.php';
-require_once 'ApiLog.php';
-require_once 'Redis.php';
 class PersisterRedisTest extends PHPUnit_Framework_TestCase {
   function testRedisInsert() {
     $apiLog = new ApiLog(uniqid(), "/api/v4/authentication", date('Y-m-d H:i:s'), "127.0.0.1");

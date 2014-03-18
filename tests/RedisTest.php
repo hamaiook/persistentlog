@@ -1,6 +1,4 @@
 <?php
-require_once "Redis.php";
-require_once "ApiLog.php";
 class RedisTest extends PHPUnit_Framework_TestCase {
   function testCreateRedis() {
     $redis = new Redis();
@@ -8,6 +6,6 @@ class RedisTest extends PHPUnit_Framework_TestCase {
   }
   function testInsertRedis(){
     $redis = new Redis();
-    $this->assertTrue($redis->insert(new ApiLog()));
+    $this->assertTrue($redis->insert(new ApiLog(uniqid(), "/api/v4/authentication",date('Y-m-d H:i:s'), "127.0.0.1")));
   }
 }
