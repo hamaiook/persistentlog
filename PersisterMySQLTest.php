@@ -10,4 +10,11 @@ class PersisterMySQLTest extends PHPUnit_Framework_TestCase {
     $persisterMySQL = new PersisterMySQL();
     $this->assertNotNull($persisterMySQL);
   }
+  function testConnectMySql(){
+   $pdo=$this->getMock('PDOConnect');
+   $pdo->expects($this->any())
+     ->method('connectMySql')
+     ->will($this->returnValue(true));
+
+  }
 }
