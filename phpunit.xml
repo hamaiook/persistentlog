@@ -4,6 +4,8 @@
       <file>PersisterMySQLTest.php</file>
       <file>ApiLogTest.php</file>
       <file>PersisterMongoTest.php</file>
+      <file>MongoDBTest.php</file>
+      <file>PersisterRedisTest.php</file>
     </testsuite>
   </testsuites>
 </phpunit>
