@@ -4,7 +4,10 @@
       <file>PersisterMySQLTest.php</file>
       <file>ApiLogTest.php</file>
       <file>PersisterMongoTest.php</file>
+<<<<<<< HEAD
+=======
       <file>MongoDBTest.php</file>
+>>>>>>> c5ecc1c465f2da22740a2363482698080f1fdf20
       <file>PersisterRedisTest.php</file>
     </testsuite>
   </testsuites>

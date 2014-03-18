@@ -3,8 +3,13 @@ require_once 'PersisterRedis.php';
 require_once 'ApiLog.php';
 require_once 'Redis.php';
 class PersisterRedisTest extends PHPUnit_Framework_TestCase {
+<<<<<<< HEAD
+  function testRedisInsert() {
+    $apiLog = new ApiLog(uniqid(), "/api/v4/authentication", new date('Y-m-d H:i:s'), "127.0.0.1");
+=======
   function testRedisConnected() {
     $apiLog = new ApiLog(uniqid(), "/api/v4/authentication", date('Y-m-d H:i:s'), "127.0.0.1");
+>>>>>>> c5ecc1c465f2da22740a2363482698080f1fdf20
     $redis = $this->getMockBuilder('Redis')->getMock();
     $redis->expects($this->once())
           ->method('insert')
